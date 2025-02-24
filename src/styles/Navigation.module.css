@@ -1,10 +1,23 @@
-/* default styling */
 
-* {
+
+nav {
     padding: 0;
     margin: 0;
+    border-bottom: black;
+    border-style: solid;
     box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: black;
+    background-color: rgba(253, 154, 223, 0.858);
   }
+
+  a {
+    font-size:larger;
+    color: black;
+    text-decoration: none;
+    /* background-color: chartreuse; */
+  }
+
 
   ul {
     list-style: none;
@@ -16,9 +29,8 @@
     font-size: 18px;
   }
 
- /* navbar */
+
  .navbar {
-    background-color: aliceblue;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -28,14 +40,15 @@
   }
   
   
-  /* logo  */
+
   .logo {
+
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
   }
   
   
-  /* ul  */
+
   .navMenu {
     display: flex;
     justify-content: space-between;
@@ -43,11 +56,11 @@
     gap: 60px;
   }
   
-  /* media queries */
+
   
   @media screen and (max-width: 780px){
     
-    /* hamburger */
+
     .hamburger {
       display: block;
       cursor: pointer;
@@ -62,8 +75,7 @@
           -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
       }
-  
-    /* adding active class to the bars  */
+
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
     }
@@ -75,7 +87,6 @@
     }
   
   
-    /* navMenu */
   
     .navMenu{
       position: absolute;
@@ -86,7 +97,6 @@
       text-align: start;
       width: 100%;
       transition: 0.7s ease-in-out;
-      background-color: aliceblue;
       padding: 10px;
     }
   

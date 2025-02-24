@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar} from "../components/Navbar"
-import "../styles/Styles.css";
+import "../styles/Root.css";
 
 export const Contacts = () => {
   return (
