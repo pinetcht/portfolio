@@ -29,22 +29,9 @@ export const Navbar = () => {
                 </Link>
               </li>
 
-
-              <li onClick={removeActive}>
-                <Link to={"/Projects"} className={`${styles.navLink}`}>
-                  Projects
-                </Link>
-              </li>
-
               <li onClick={removeActive}>
                 <Link to={"/Contacts"} className={`${styles.navLink}`}>
                   Contacts
-                </Link>
-              </li>
-
-              <li onClick={removeActive}>
-                <Link to={"/About"} className={`${styles.navLink}`}>
-                  About
                 </Link>
               </li>
             </ul>

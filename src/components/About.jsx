@@ -13,7 +13,7 @@ export const About = () => {
       <p>
         I'm an aspiring software developer from
         Bangkok, Thailand. My journey started one fateful day when I took Intro to CS in my sophomore year. 
-        I'm a dabbler at heart, and I love exploring the many facets of computer science. 
+        I'm a dabbler at heart, and I dabbled my way to CS. I love exploring the many facets of computer science. 
       </p>
 
       <p>
