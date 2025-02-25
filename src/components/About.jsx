@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../assets/pcip.jpg"
+import pic from "../assets/notion-face.png"
 import "../styles/Root.css";
 
 export const About = () => {

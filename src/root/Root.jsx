@@ -31,6 +31,12 @@ export const Root = () => {
             <Project name={"Character-Based Text Generation and Classification"}
             desc="A bigram text generator to simulate dialogue styles of three movie characters."
             tech="NLP, Machine Learning, Java,Python"/>
+            <Project name={"Tastetopia"}
+            desc="A recipe sharing platform with user and admin features and an AI chatbot assistant"
+            tech="OpenAI API, React.js, Express.js Firebase"/>
+            <Project name={"Thomas Jefferson Elementary School Dashboard"}
+            desc="A school administrator dashboard to manage students, courses, and teachers."
+            tech="React.js, Firebase"/>
         </div>
         <div className="blocks">
           <h1 >Experience</h1>
