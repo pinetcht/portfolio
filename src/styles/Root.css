@@ -1,21 +1,82 @@
-
 :root {
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
+}
 
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
 }
 
 .page {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Heebo", sans-serif;
     padding: 10px;
     justify-self: center;
     justify-items: center;
-    
+
 }
 
+
+.heebo-regular {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: 350;
+    font-style: normal;
+}
+
+.heebo-bold {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 .intro {
-    justify-self: center;
-    justify-items: center;
-    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6% 10%;
+}
+
+.blocks {
+    width: 100%;
+    padding: 5% 20%;
+    background-color: #FFAAAA;
+}
+
+.description {
+    flex: 1;
+    margin-right: 8%;
+}
+
+
+#myTitle {
+    border-color: black;
+    font-family: "Heebo", sans-serif;
+    font-size: 2rem;
+
+}
+
+/* .intro, .description{
+    border: solid;
+} */
+
+
+.resumeBox {
+    background-color: #FFAAAA;
+    width: fit-content;
+    padding: 3%;
+    font-size: large;
+}
+
+.pictureBox {
+    justify-content: center;
+    align-content: center;
 }
 
 img {
@@ -23,25 +84,24 @@ img {
     border-radius: 8px;
 }
 
-
-.blocks{
-    margin: 5%;
-    width:80%;
+.portrait {
+    width: 100%;
 }
 
 
+
 .project {
-    border:black;
-    border-style:solid;
+    border: black;
+    border-style: solid;
     margin-top: 3%;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
-    
+
 }
 
 .projectDetails {
-    display:block;
+    display: block;
     margin-left: 5%;
 }
 
@@ -54,8 +114,8 @@ img {
     margin: 3%;
 }
 
-.expHeader{
-    display:flex;
+.expHeader {
+    display: flex;
     justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 0px;

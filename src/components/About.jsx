@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <>
 
-      <h1 className="header">About</h1>
+      <h1 className="header">about.</h1>
 
       <img src={pic} id="pic"/>
 
@@ -33,7 +33,7 @@ export const About = () => {
         I spent the summer working at a startup called VinePair, developing an end-to-end full-stack website.
         I co-developed an ETL data pipeline from 3 different sources to calculate SEO trends and audeince insights, and created an interactive dashboard
         that dynamically filters alcohol types and time ranges. Some tech stacks I used were React, JavaScript, AmCharts, Python, Docker, and AWS.
-        I became familiar with Linux system and learned the importance of documentation.
+        
       </p>
     </>
   );

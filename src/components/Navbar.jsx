@@ -20,27 +20,37 @@ export const Navbar = () => {
             <Link to={"/"} className="Logo">
               Pine N.
             </Link>
-            <ul
-              className={`${styles.navMenu} ${isActive ? styles.active : ""}`}
-            >
-              <li onClick={removeActive}>
-                <Link to={"/"} className={`${styles.navLink}`}>
-                  Home
-                </Link>
-              </li>
+            <div className={styles.navRight}>
 
-              <li onClick={removeActive}>
-                <Link to={"/Contacts"} className={`${styles.navLink}`}>
-                  Contacts
-                </Link>
-              </li>
-            </ul>
 
-            <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleIsActive}>
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
-            <span className={`${styles.bar}`}></span>
-          </div>
+              <ul
+                className={`${styles.navMenu} ${isActive ? styles.active : ""}`}
+              >
+                <li>
+                  <a className={`${styles.navLink}`} href="#projects">projects.</a>
+                </li>
+
+
+                <li>
+                  <a className={`${styles.navLink}`} href="#experience">experience.</a>
+                </li>
+
+
+                <li>
+                  <a className={`${styles.navLink}`} href="#skills">skills.</a>
+                </li>
+
+                <li>
+                  <a className={`${styles.navLink}`} href="#about">about.</a>
+                </li>
+              </ul>
+
+              <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`} onClick={toggleIsActive}>
+                <span className={`${styles.bar}`}></span>
+                <span className={`${styles.bar}`}></span>
+                <span className={`${styles.bar}`}></span>
+              </div>
+            </div>
           </nav>
         </header>
       </div>
