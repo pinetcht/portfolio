@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import "../styles/Dropdown.css";
 
-const Dropdown = ({ options, onSelect, placeholder = 'Software Developer' }) => {
+const Dropdown = ({ options, onSelect, placeholder = 'software developer' }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selected, setSelected] = useState(null);
     const dropdownRef = useRef(null);

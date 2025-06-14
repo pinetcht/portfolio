@@ -8,7 +8,7 @@ export const About = () => {
 
       <h1 className="header">about.</h1>
 
-      <img src={pic} id="pic"/>
+      <img src={pic} id="pic" style={{width: "20%"}}/>
 
       <p>
         I'm an aspiring software developer from

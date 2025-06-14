@@ -1,5 +1,6 @@
 :root {
     background-color: #FFFFFF;
+    font-family: "Heebo", sans-serif;
 }
 
 body {
@@ -7,17 +8,26 @@ body {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 65px;
     margin: 0;
     font-weight: 700;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 350;
+}
+
 .page {
     font-family: "Heebo", sans-serif;
-    padding: 10px;
     justify-self: center;
     justify-items: center;
-
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -44,8 +54,11 @@ h1 {
 }
 
 .blocks {
-    width: 100%;
-    padding: 5% 20%;
+    padding: 5% 10%;
+    background-color: #FFFFFF;
+}
+
+.blocks.pink{
     background-color: #FFAAAA;
 }
 
@@ -79,10 +92,10 @@ h1 {
     align-content: center;
 }
 
-img {
+/* img {
     width: 100px;
     border-radius: 8px;
-}
+} */
 
 .portrait {
     width: 100%;
@@ -91,18 +104,45 @@ img {
 
 
 .project {
-    border: black;
-    border-style: solid;
+    /* border-style: solid; */
     margin-top: 3%;
     display: flex;
     justify-content: flex-start;
     padding: 2%;
+}
 
+.projPic {
+    /* width: 50%; */
+    max-height: 40vh;
+    object-fit:scale-down;
+    align-self: center;
+}
+
+a {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.githubContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+}
+
+.githubContainer:hover {
+    transform: scale(1.02);
+}
+
+
+.projPic:hover {
+    transform: scale(1.02);
 }
 
 .projectDetails {
     display: block;
     margin-left: 5%;
+    flex: 50%;
 }
 
 
