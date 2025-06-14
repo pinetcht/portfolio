@@ -17,9 +17,10 @@ export const Navbar = () => {
       <div className="App">
         <header className="App-header">
           <nav className={`${styles.navbar}`}>
-            <Link to={"/"} className="Logo">
+            <div className={`${styles.logo}`}>
               Pine N.
-            </Link>
+            </div>
+              
             <div className={styles.navRight}>
 
 

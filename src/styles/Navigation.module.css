@@ -2,15 +2,9 @@ nav {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Heebo", sans-serif;
   color: black;
   background-color: #FFAAAA;
-}
-
-a {
-  font-size: larger;
-  color: black;
-  text-decoration: none;
 }
 
 
@@ -18,10 +12,14 @@ ul {
   list-style: none;
 }
 
-.Logo {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.logo {
+  margin: 0.5rem;
+  display: flex;
   color: black;
-  font-size: 18px;
+  justify-content: start;
+  font-family: "Heebo", sans-serif;
+  font-weight:500;
+  font-size:xx-large;
 }
 
 
