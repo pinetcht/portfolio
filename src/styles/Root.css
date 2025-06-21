@@ -85,6 +85,8 @@ h4 {
     width: fit-content;
     padding: 3%;
     font-size: large;
+    text-decoration: none;
+    color: black;
 }
 
 .pictureBox {
@@ -124,14 +126,25 @@ a {
     justify-content: center;
 }
 
-.githubContainer {
-    width: fit-content;
+.icons {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
-.githubContainer:hover {
+
+.githubContainer {
+    width: 2.5em;
+    margin-right: 5%;
+}
+
+.webContainer:hover, .githubContainer:hover {
     transform: scale(1.02);
+}
+
+.webContainer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -159,4 +172,20 @@ a {
     justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.aboutContainer {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;  */
+    align-items: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-items: center;
+    /* border: solid; */
+}
+
+.paragraphs {
+    /* border: solid; */
+    max-width: 70%;
 }

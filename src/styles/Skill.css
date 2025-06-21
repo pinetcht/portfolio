@@ -1,0 +1,23 @@
+.skill {
+    display: flex;
+    border: solid;
+    border-color: black;
+    width:fit-content;
+    padding: 1%;
+    align-items:center;
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: white;
+    margin: 1%;
+}
+
+.icon {
+  margin-right: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
