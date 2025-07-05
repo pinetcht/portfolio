@@ -1,8 +1,8 @@
 .custom-dropdown {
     position: relative;
-    font-size: 38px;
+    font-size: 2.5rem;
     font-weight: 600;
-    width: fit-content;
+    width: 70%;
     font-family: "Heebo", sans-serif;
     background-color: #FFE99A;
     border-style: solid;
@@ -25,7 +25,7 @@
 
 .options {
     position: absolute;
-    font-size: 30px;
+    font-size: 1.5rem;
     top: 100%;
     left: 0;
     right: 0;
@@ -46,6 +46,7 @@
 
 .arrow {
     margin-left: 8px;
+    justify-self:end;
 }
 
 @keyframes fadeIn {
@@ -58,4 +59,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media screen and (max-width: 780px) {
+    .custom-dropdown {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Project } from "../components/Project.jsx"
 import harmony from "../assets/harmony.png"
 import ratemysongs from "../assets/ratemysongs.png"
-import nlp from "../assets/nlp.png"
+import nlp from "../assets/textgen.png"
 import tastetopia from "../assets/tastetopia.png"
 import playlist from "../assets/p-laylist.png"
 import housing47 from "../assets/housing47.png"

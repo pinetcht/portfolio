@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 3rem;
     margin: 0;
     font-weight: 700;
 }
@@ -30,11 +30,17 @@ h4 {
     margin: 0;
 }
 
+.intro {
+    width: 70%;
+    justify-self: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 .heebo-regular {
     font-family: "Heebo", sans-serif;
     font-optical-sizing: auto;
-    font-size: 25px;
+    font-size: 1.3rem;
     font-weight: 350;
     font-style: normal;
 }
@@ -58,13 +64,14 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.blocks.pink{
+.blocks.pink {
     background-color: #FFAAAA;
 }
 
 .description {
     flex: 1;
     margin-right: 8%;
+
 }
 
 
@@ -74,10 +81,6 @@ h4 {
     font-size: 2rem;
 
 }
-
-/* .intro, .description{
-    border: solid;
-} */
 
 
 .resumeBox {
@@ -94,11 +97,6 @@ h4 {
     align-content: center;
 }
 
-/* img {
-    width: 100px;
-    border-radius: 8px;
-} */
-
 .portrait {
     width: 100%;
 }
@@ -106,7 +104,7 @@ h4 {
 
 
 .project {
-    /* border-style: solid; */
+    /* border:solid; */
     margin-top: 3%;
     display: flex;
     justify-content: flex-start;
@@ -114,10 +112,23 @@ h4 {
 }
 
 .projPic {
-    /* width: 50%; */
     max-height: 40vh;
-    object-fit:scale-down;
+    width: 40%;
+    object-fit: scale-down;
     align-self: center;
+    /* border: solid; */
+    border-color: red;
+    flex: 1;
+}
+
+.projPic:hover {
+    transform: scale(1.02);
+}
+
+.projectDetails {
+    /* border:solid; */
+    margin-left: 5%;
+    flex: 1;
 }
 
 a {
@@ -137,7 +148,8 @@ a {
     margin-right: 5%;
 }
 
-.webContainer:hover, .githubContainer:hover {
+.webContainer:hover,
+.githubContainer:hover {
     transform: scale(1.02);
 }
 
@@ -148,31 +160,53 @@ a {
 }
 
 
-.projPic:hover {
-    transform: scale(1.02);
-}
 
-.projectDetails {
-    display: block;
-    margin-left: 5%;
-    flex: 50%;
-}
 
 
 .exp {
     border: black;
+
     border-left-style: solid;
     border-width: 5px;
     padding-left: 5%;
     margin: 3%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .expHeader {
+    /* border:solid; */
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+
+    /* justify-content: space-between; */
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.expHeader.right {
+    align-items: end;
+    font-size: 1.1rem;
+    /* border:solid; */
+}
+
+.expDetail {
+    /* border:solid; */
+    flex: 1;
+    margin: 0px;
+    display: flex;
+    align-items: end;
+    /* align-content: space-between; */
+}
+
+.company {
+    font-size: 1.5rem;
+}
+
+
 
 .aboutContainer {
     display: flex;
@@ -182,10 +216,115 @@ a {
     /* align-items: center; */
     flex-direction: column;
     justify-items: center;
-    /* border: solid; */
+
 }
 
-.paragraphs {
-    /* border: solid; */
-    max-width: 70%;
+.contactsBottom {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    width: 40%;
+    align-self: center;
+    margin-top: 4rem;
+}
+
+.contactContainer {
+    width: fit-content;
+}
+
+.blocks.about {
+    padding: 5% 10% 5% 10%;
+}
+
+@media screen and (max-width: 780px) {
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 70%;
+
+    }
+
+    .description {
+        margin-right: 0px;
+    }
+
+    .pictureBox {
+        width: 60%;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .heebo-regular.paragraph {
+        align-items: center;
+    }
+
+    .project {
+
+        border-color: chartreuse;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0% 5% 0%;
+    }
+
+    a {
+
+        border-color: cadetblue;
+    }
+
+    .projPic {
+
+        max-height: 30vh;
+    }
+
+    .projectDetails {
+
+        border-color: blueviolet;
+        justify-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+
+    .exp {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .expHeader {
+        border-color: aqua;
+        width: 100%;
+    }
+
+    .expHeader.right {
+        align-items: start;
+        /* margin-top:0.7rem; */
+    }
+
+    .role {
+        margin-bottom: 0px;
+    }
+
+    .aboutContainer {
+        /* border:solid; */
+        border-color: coral;
+    }
+
+    .contactsBottom {
+        /* border:solid; */
+        border-color: blue;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .contactContainer {}
+
 }

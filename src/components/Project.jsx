@@ -7,9 +7,7 @@ export const Project = ({ name, desc, tech, pic, link, githubLink }) => {
         <>
 
             <div className="project" >
-                <a href={link} target="_blank">
-                    <img className="projPic" src={pic} />
-                </a>
+                <img className="projPic" src={pic} />
                 <div className="projectDetails">
                     <h2 style={{ marginBottom: "0px" }}>{name}</h2>
                     <h4 style={{ marginTop: "5px", marginBottom: "5px", }}>{desc}</h4>
@@ -21,7 +19,7 @@ export const Project = ({ name, desc, tech, pic, link, githubLink }) => {
 
                         {link &&
                             <a href={link} target="_blank" className="webContainer">
-                                <img src={web} style={{width: "auto", height: "2em"}}></img>
+                                <img src={web} style={{ width: "auto", height: "2em" }}></img>
                             </a>
                         }
 

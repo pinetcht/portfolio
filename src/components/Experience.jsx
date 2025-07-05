@@ -1,23 +1,24 @@
 import React, { useRef } from "react";
-import  "../styles/Root.css";
+import "../styles/Root.css";
 
 
-export const Experience = ({company, date, role, location}) => {
+export const Experience = ({ company, date, role, location }) => {
     return (
         <>
 
-        <div className="exp">
-            <div className="expHeader">
-            <h2 className="expHeader">{role}</h2>
-            <h3 className="expHeader"> {date} </h3>
-            </div>
-            <div className="expHeader">
-            <h3>{company}</h3>
-            <h3>{location}</h3>
-            </div>
-            
+            <div className="exp">
+                <div className="expHeader">
+                    <h2 className="role expDetail">{role}</h2>
+                    <h3 className="company expDetail">{company}</h3>
+                </div>
+                <div className="expHeader right">
 
-        </div>
+                    <h3 className="expDetail"> {date} </h3>
+                    <h3 className="expDetail">{location}</h3>
+                </div>
+
+
+            </div>
 
         </>
     )

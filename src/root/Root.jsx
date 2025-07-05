@@ -36,14 +36,14 @@ export const Root = () => {
       <div className="intro">
         <div className="description">
           <div className="title">
-            <h1 style={{ fontSize: "3rem" }}>Hi, I am Pine,  {selectedOption === 'optimizer' ? 'an' : 'a'} </h1>
+            <h1>Hi, I am Pine,  {selectedOption === 'optimizer' ? 'an' : 'a'} </h1>
             <Dropdown options={titles} onSelect={handleSelect}></Dropdown>
 
           </div>
 
 
 
-          <p className='heebo-regular' style={{ letterSpacing: "1px" }}>
+          <p className='heebo-regular paragraph' style={{ letterSpacing: "1px" }}>
             I’m a software developer driven by a passion to create
             user-focused and efficient technology solutions. I’m excited to
             leverage my technical experience to solve real-world problems!</p>
@@ -84,7 +84,7 @@ export const Root = () => {
 
       </div>
 
-      <div className="blocks">
+      <div className="blocks about">
         <About />
       </div>
     </>
